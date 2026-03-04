@@ -1,105 +1,64 @@
 :root {
---primary-color: #4F46E5;
---secondary-color: #10B981;
---dark-bg: #1F2937;
---font-main: 'Poppins', sans-serif;
+    --primary-color: #4F46E5;
+    --secondary-color: #10B981;
+    --dark-bg: #1F2937;
+    --font-main: 'Poppins', sans-serif;
 }
 
 body {
-font-family: var(--font-main);
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 /* EL STYLES MANAGER DEBE CONTINUAR DESDE AQUÍ */
 
-/* Dayana */
-.main-header {
-background-color: #ffffff;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 25px 8%;
-box-shadow: 0 4px 15px rgba(26, 54, 93, 0.1);
-position: sticky;
-top: 0;
-z-index: 1000;
-border-bottom: 3px solid #3182ce;
-}
-
-.logo {
-height: 130px;
-width: auto;
-transition: transform 0.3s ease;
-}
-
-.logo:hover {
-transform: scale(1.05);
-}
-
-.main-nav .nav-list {
-display: flex;
-list-style: none;
-gap: 45px;
-}
-
-.main-nav .nav-link {
-text-decoration: none;
-color: #2c5282;
-font-weight: 700;
-font-size: 1.3rem;
-transition: all 0.3s;
-}
-
-.main-nav .nav-link:hover {
-color: #3182ce;
-border-bottom: 2px solid #3182ce;
-}
-
 .hero {
-height: 85vh;
-background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-color: white;
-padding: 0 20px;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
 }
 
-.hero-title {
-font-size: 3.8rem;
-margin-bottom: 20px;
-font-weight: 800;
-text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+.hero h1 {
+    font-size: 2.5rem;
 }
 
-.hero-subtitle {
-font-size: 1.4rem;
-margin-bottom: 40px;
-color: #ebf8ff;
-max-width: 800px;
-margin-left: auto;
-margin-right: auto;
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.btn-primary {
-display: inline-block;
-background-color: #63b3ed;
-color: #003e6b;
-padding: 20px 50px;
-text-decoration: none;
-border-radius: 12px;
-font-weight: 800;
-font-size: 1.2rem;
-transition: all 0.3s;
-box-shadow: 0 4px 14px 0 rgba(99, 179, 237, 0.39);
+.services {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.btn-primary:hover {
-background-color: #ffffff;
-color: #2b6cb0;
-transform: translateY(-5px);
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
